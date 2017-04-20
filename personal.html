@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/swiper.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="icon/iconfont.css">
   <title>Document</title>
   <style>
     html,
@@ -14,7 +15,7 @@
       position: relative;
       height: 100%;
     }
-
+    
     body {
       background: #eee;
       font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -23,55 +24,105 @@
       margin: 0;
       padding: 0;
     }
-
+    
     .swiper-container {
       width: 100%;
       height: 100%;
     }
-
+    
     .swiper-slide {
       text-align: center;
       font-size: 18px;
       background: #fff;
-
-      /* Center slide text vertically */
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      -webkit-justify-content: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -webkit-align-items: center;
-      align-items: center;
-
-      background: linear-gradient(324deg, #fff 4%, transparent 4%) -70px 43px,
-      linear-gradient( 36deg, #fff 4%, transparent 4%) 30px 43px,
-      linear-gradient( 72deg, #FAFAFA 8.5%, transparent 8.5%) 30px 43px,
-      linear-gradient(288deg, #FAFAFA 8.5%, transparent 8.5%) -70px 43px,
-      linear-gradient(216deg, #FAFAFA 7.5%, transparent 7.5%) -70px 23px,
-      linear-gradient(144deg, #FAFAFA 7.5%, transparent 7.5%) 30px 23px,
-
-      linear-gradient(324deg, #fff 4%, transparent 4%) -20px 93px,
-      linear-gradient( 36deg, #fff 4%, transparent 4%) 80px 93px,
-      linear-gradient( 72deg, #FAFAFA 8.5%, transparent 8.5%) 80px 93px,
-      linear-gradient(288deg, #FAFAFA 8.5%, transparent 8.5%) -20px 93px,
-      linear-gradient(216deg, #FAFAFA 7.5%, transparent 7.5%) -20px 73px,
-      linear-gradient(144deg, #FAFAFA 7.5%, transparent 7.5%) 80px 73px;
-      background-color: #fff;
-      background-size: 100px 100px;
+      background: linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px, linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px, linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px, linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px, linear-gradient(90deg, #1b1b1b 10px, transparent 10px), linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+      background-color: #131313;
+      background-size: 20px 20px;
     }
-
-
+    
+    .project {
+      position: absolute;
+      box-sizing: border-box;
+      background: rgb(254, 0, 0);
+      width: 500px;
+      padding: 1em;
+      color: #fff;
+      transform: perspective(10em) rotateX(5deg) rotateY(2deg) rotateZ(-5deg);
+      transform-origin: bottom;
+    }
+    .prj1 {
+      top: 50px;left: 50px;
+    }
+    .prj2 {
+      bottom: 50px;left: 50px;
+    }
+    .prj3 {
+      top: 50px;right: 50px;
+    }
+    .prj4 {
+      bottom: 50px;right: 50px;
+    }
+    .project>.description {
+      color: #fff;
+      background: linear-gradient(324deg, #000 4%, transparent 4%) -70px 43px, linear-gradient( 36deg, #000 4%, transparent 4%) 30px 43px, linear-gradient( 72deg, rgb(35, 35, 35) 8.5%, transparent 8.5%) 30px 43px, linear-gradient(288deg, rgb(35, 35, 35) 8.5%, transparent 8.5%) -70px 43px, linear-gradient(216deg, rgb(35, 35, 35) 7.5%, transparent 7.5%) -70px 23px, linear-gradient(144deg, rgb(35, 35, 35) 7.5%, transparent 7.5%) 30px 23px, linear-gradient(324deg, #000 4%, transparent 4%) -20px 93px, linear-gradient( 36deg, #000 4%, transparent 4%) 80px 93px, linear-gradient( 72deg, rgb(35, 35, 35) 8.5%, transparent 8.5%) 80px 93px, linear-gradient(288deg, rgb(35, 35, 35) 8.5%, transparent 8.5%) -20px 93px, linear-gradient(216deg, rgb(35, 35, 35) 7.5%, transparent 7.5%) -20px 73px, linear-gradient(144deg, rgb(35, 35, 35) 7.5%, transparent 7.5%) 80px 73px;
+      background-color: #000;
+      background-size: 100px 100px;
+      padding: 20px 10px;
+      font-size: 20px;
+      line-height: 1.9em;
+      transform: perspective(10em) rotateX(5deg) rotateY(2deg) rotateZ(2deg) translateY(-20px);
+      transform-origin: left;
+    }
+    
+    .title {
+      line-height: 50px;
+      margin: 10px auto;
+    }
+    
+    .title>.iconfont {
+      font-size: 50px;
+      margin-right: 10px;
+    }
+    
+    a>button {
+      margin: 10px auto;
+    }
+    
+    .p5out {
+      transform: perspective(5em) rotateX(-5deg);
+      background-color: white;
+      padding: 15px 0px 15px 10px;
+      transform-origin: left;
+      border: none;
+    }
+    
+    .p5 {
+      background-color: rgb(254, 0, 0);
+      font-size: 25px;
+      padding: 5px 50px;
+      color: #fff;
+      box-shadow: 5px 5px 0 10px black;
+      transform: perspective(5em) rotateX(-5deg) rotateY(5deg) rotateZ(-3deg);
+      transform-origin: left;
+    }
+    
+    .p5 text {
+      fill: currentColor;
+    }
+    
+    .p5 svg {
+      overflow: visible;
+    }
+    
+    .p5 use {
+      stroke: black;
+      stroke-width: 6;
+      stroke-linejoin: round;
+    }
+    
     .envelope {
       padding: 1em;
       border: 1em solid transparent;
-      background: linear-gradient(white, white) padding-box,
-      repeating-linear-gradient(-45deg, red 0, red 12.5%, #fff 0, #fff 25%,
-      #58a 0, #58a 37.5%, #fff 0, #fff 50%) 0 / 6em 6em;
+      background: linear-gradient(white, white) padding-box, repeating-linear-gradient(-45deg, red 0, red 12.5%, #fff 0, #fff 25%, #58a 0, #58a 37.5%, #fff 0, #fff 50%) 0 / 6em 6em;
       max-width: 20em;
       font: 100%/1.6 Baskerville, Palatino, serif;
       box-shadow: 0 0 0 2px #ccc;
@@ -90,11 +141,79 @@
       </div>
       <!--项目经验-->
       <div class="swiper-slide page2">
-        <div class="project">
-          <img src="" alt="">
-          <div class="title"></div>
-          <div class="description"></div>
-          <div class="link"></div>
+        <div class="project prj1">
+          <p class="title"><i class="iconfont icon-pixivbtn"></i>pixiv下载器</p>
+          <div class="description">
+            <p>使用requests添加请求头并发送图片下载请求。对于图片直接写入下载数据。对于动图，先使用zipfile获取解压后的帧，然后使用imageio生成gif。</p>
+            <a href="https://github.com/ssshooter/pixivDownloader">
+              <button class="p5out">
+                <div class="p5">
+                <svg width="4em" height="1.2em">
+                  <use xlink:href="#css" />
+                  <text id="css" y="1em">项目地址</text>
+                </svg>
+                </div>
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="project prj3">
+          <p class="title"><i class="iconfont icon-vue"></i>DANote.Vue</p>
+          <div class="description">
+            <p>一个独特的笔记应用，可以记下你的灵感。也记下一些对自己的提问，可以在几星期后，甚至几个月后回答自己提出的问题，或许会有完全不同的感受。</p>
+            <a href="https://github.com/ssshooter/DANote.Vue">
+              <button class="p5out">
+                <div class="p5">
+                <svg width="4em" height="1.2em">
+                  <use xlink:href="#css" />
+                  <text id="css" y="1em">项目地址</text>
+                </svg>
+                </div>
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="project prj2">
+          <p class="title"><i class="iconfont icon-bangong"></i>人才有约</p>
+          <div class="description">
+            <p>人才有约是为劳务外派员工所提供的业务办理工具。便于员工查询工资、办事指南、培训资料、党务信息等，还可以预约业务办事。该App是使用APICloud开发的Hybird App，一套代码，两个客户端。</p>
+            <a href="http://sj.qq.com/myapp/detail.htm?apkName=com.rencaiyouyue">
+              <button class="p5out">
+                <div class="p5">
+                <svg width="4em" height="1.2em">
+                  <use xlink:href="#addown" />
+                  <text id="addown" y="1em">android下载</text>
+                </svg>
+                </div>
+              </button>
+            </a>
+            <a href="https://itunes.apple.com/cn/app/id1138651857">
+              <button class="p5out">
+                <div class="p5">
+                <svg width="4em" height="1.2em">
+                  <use xlink:href="#iosdown" />
+                  <text id="iosdown" y="1em">ios下载</text>
+                </svg>
+                </div>
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="project prj4">
+          <p class="title"><i class="iconfont icon-woderiji"></i>MyDiary</p>
+          <div class="description">
+            <p>仿电影《你的名字》里的日记app，主要功能包括①电话本，可以记录姓名与电话号码，有搜索功能，有侧边栏的字母索引②代办事项，可以新添、删除事项，划线表示完成③笔记本功能，有搜索功能④小日历</p>
+            <a href="https://github.com/ssshooter/MyDiary">
+              <button class="p5out">
+                <div class="p5">
+                <svg width="4em" height="1.2em">
+                  <use xlink:href="#css" />
+                  <text id="css" y="1em">项目地址</text>
+                </svg>
+                </div>
+              </button>
+            </a>
+          </div>
         </div>
       </div>
       <!--擅长技术-->
