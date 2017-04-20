@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .note {
+      box-sizing: border-box;
+      position: relative;
+      background: #BD2b30;
+      background: linear-gradient(-30deg,transparent 1.5em,#BD2b30 0);
+      width: 300px;
+      border-radius:.5em;
+      padding: 1em;
+    }
+    .note::before {
+      content: '';
+      position: absolute;
+      bottom: 0;right: 0;
+      background: linear-gradient(to left top,transparent 50%,rgba(0, 0, 0, .2) 0,rgba(0, 0, 0, .4))
+      100% 0 no-repeat;
+      width: 1.73em;
+      height: 3em;
+      transform: translateX(-1.3em) rotate(30deg);
+      transform-origin: bottom left;
+      border-top-left-radius: inherit;
+      box-shadow: -.2em -.2em .3em -.1em rgba(0,0,0,.15);
+    }
+  </style>
+</head>
+<body>
+  <div class="note">
+    sdhfahiai
+  </div>
+</body>
+</html>

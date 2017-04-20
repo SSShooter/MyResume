@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css">
+  <title>Document</title>
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+
+      background: linear-gradient(324deg, #fff 4%, transparent 4%) -70px 43px,
+      linear-gradient( 36deg, #fff 4%, transparent 4%) 30px 43px,
+      linear-gradient( 72deg, #FAFAFA 8.5%, transparent 8.5%) 30px 43px,
+      linear-gradient(288deg, #FAFAFA 8.5%, transparent 8.5%) -70px 43px,
+      linear-gradient(216deg, #FAFAFA 7.5%, transparent 7.5%) -70px 23px,
+      linear-gradient(144deg, #FAFAFA 7.5%, transparent 7.5%) 30px 23px,
+
+      linear-gradient(324deg, #fff 4%, transparent 4%) -20px 93px,
+      linear-gradient( 36deg, #fff 4%, transparent 4%) 80px 93px,
+      linear-gradient( 72deg, #FAFAFA 8.5%, transparent 8.5%) 80px 93px,
+      linear-gradient(288deg, #FAFAFA 8.5%, transparent 8.5%) -20px 93px,
+      linear-gradient(216deg, #FAFAFA 7.5%, transparent 7.5%) -20px 73px,
+      linear-gradient(144deg, #FAFAFA 7.5%, transparent 7.5%) 80px 73px;
+      background-color: #fff;
+      background-size: 100px 100px;
+    }
+
+
+    .envelope {
+      padding: 1em;
+      border: 1em solid transparent;
+      background: linear-gradient(white, white) padding-box,
+      repeating-linear-gradient(-45deg, red 0, red 12.5%, #fff 0, #fff 25%,
+      #58a 0, #58a 37.5%, #fff 0, #fff 50%) 0 / 6em 6em;
+      max-width: 20em;
+      font: 100%/1.6 Baskerville, Palatino, serif;
+      box-shadow: 0 0 0 2px #ccc;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <!--一些信息-->
+      <div class="swiper-slide page1">
+        <h1>周德杰</h1>
+        <p>前端开发工程师</p>
+        <p>喜欢阅读，喜欢编程，最爱JavaScript</p>
+      </div>
+      <!--项目经验-->
+      <div class="swiper-slide page2">
+        <div class="project">
+          <img src="" alt="">
+          <div class="title"></div>
+          <div class="description"></div>
+          <div class="link"></div>
+        </div>
+      </div>
+      <!--擅长技术-->
+      <div class="swiper-slide page2">
+
+      </div>
+      <!--个人经历-->
+      <div class="swiper-slide page2">
+
+      </div>
+      <!--联系我-->
+      <div class="swiper-slide page1">
+        <div class="envelope">
+          456udwsjafiwjafjsafjofak
+        </div>
+      </div>
+    </div>
+    <!-- 如果需要分页器 -->
+    <div class="swiper-pagination"></div>
+
+  </div>
+  <script src="js/swiper.min.js"></script>
+  <script src="https://raw.githubusercontent.com/julianshapiro/velocity/master/velocity.min.js"></script>
+  <script>
+    var mySwiper = new Swiper('.swiper-container', {
+      direction: 'vertical',
+      // 如果需要分页器
+      pagination: '.swiper-pagination',
+      paginationClickable: true,
+      keyboardControl: true,
+      onTransitionEnd: function (swiper) {
+        // alert(swiper.activeIndex);
+      }
+    })
+  </script>
+</body>
+
+</html>
