@@ -1,10 +1,10 @@
 
 @font-face {font-family: "iconfont";
-  src: url('iconfont.eot?t=1492755396679'); /* IE9*/
-  src: url('iconfont.eot?t=1492755396679#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('iconfont.woff?t=1492755396679') format('woff'), /* chrome, firefox */
-  url('iconfont.ttf?t=1492755396679') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('iconfont.svg?t=1492755396679#iconfont') format('svg'); /* iOS 4.1- */
+  src: url('iconfont.eot?t=1492787090349'); /* IE9*/
+  src: url('iconfont.eot?t=1492787090349#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff?t=1492787090349') format('woff'), /* chrome, firefox */
+  url('iconfont.ttf?t=1492787090349') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1492787090349#iconfont') format('svg'); /* iOS 4.1- */
 }
 
 .iconfont {
@@ -17,6 +17,8 @@
 
 .icon-twitter:before { content: "\e634"; }
 
+.icon-email:before { content: "\e60b"; }
+
 .icon-pixivbtn:before { content: "\e600"; }
 
 .icon-wechat1193418easyiconnet:before { content: "\e651"; }
@@ -24,6 +26,8 @@
 .icon-weibo1193419easyiconnet:before { content: "\e652"; }
 
 .icon-bangong:before { content: "\e744"; }
+
+.icon-lingying:before { content: "\e6c1"; }
 
 .icon-python:before { content: "\e63e"; }
 
