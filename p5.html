@@ -5,9 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/swiper.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <link rel="stylesheet" type="text/css" href="icon/iconfont.css">
   <title>Document</title>
   <style>
@@ -379,6 +378,20 @@
     .envelope i {
       font-size: 50px;
     }
+
+    /*改*/
+    
+    .swiper-pagination-bullet {
+      background-color: #fff;
+    }
+    .swiper-pagination-bullet-active {
+      background-color: #f00;
+    }
+    .swiper-pagination-bullet {
+      height: 15px;
+      width: 15px;
+    }
+
   </style>
 </head>
 
@@ -538,7 +551,7 @@
     <div class="swiper-pagination"></div>
 
   </div>
-  <script src="js/swiper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
   <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
   <script>
     $('.page1 .p5list-title,.page1 .p5list-item').addClass('right-left-up');
